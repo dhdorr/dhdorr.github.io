@@ -189,7 +189,7 @@ function drawGrid() {
         mouseY >= grid[i][j].y * sLen &&
         mouseY <= grid[i][j].y * sLen + sLen
       ) {
-        fill(237, 34, 93);
+        fill(color("#3fada8"));
         rect(grid[i][j].x * sLen, grid[i][j].y * sLen, sLen, sLen);
       }
     }
