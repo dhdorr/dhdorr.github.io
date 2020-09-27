@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #eea849;
+  background: #393e46;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+.instructions li {
+  list-style: none;
+  text-decoration: none;
+}
