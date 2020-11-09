@@ -103,7 +103,7 @@ p {
 .resume-btn {
   display: flex;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
   /*#eea849  e74435*/
   background: #eea849;
   text-decoration: none;
@@ -116,6 +116,10 @@ p {
   box-shadow: 5px 5px 15px #000000;
   font-size: 20px;
   font-weight: 400;
+}
+
+.buttons a:hover {
+  box-shadow: 6px 6px 16px #966000;
 }
 
 .contact-btn {
@@ -204,9 +208,21 @@ p {
   color: #3fada8;
 }
 
+.nav-links a:hover {
+  color: #3fada8;
+}
+
+.proj__card:hover {
+  box-shadow: 7px 7px 17px #f1a31c;
+}
+
 .about__pic {
   display: flex;
   align-items: center;
+}
+
+.about__pic img {
+  overflow-x: hidden;
 }
 
 .projects__info {
@@ -253,8 +269,8 @@ p {
 .projects__display {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  width: 50%;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
   height: 40vh;
   background: #797a7e;
   border-radius: 1rem;
@@ -550,7 +566,8 @@ textarea {
   justify-content: space-between;
   align-items: center;
   background: rgba(0, 128, 0, 0);
-  height: 100%;
+  height: 30%;
+  width: 50%;
 }
 
 .social-btns-list li {
@@ -563,6 +580,11 @@ textarea {
   border-radius: 2rem;
   background: white;
   box-shadow: 2px 4px 6px rgb(0, 0, 0);
+}
+
+.social-btns-list li:hover {
+  color: #3fada8;
+  box-shadow: 2px 2px 4px #3fada8;
 }
 
 .social-btns-list h2 {
