@@ -195,6 +195,12 @@ function drawGrid() {
     }
   }
 
+  fill(color("#33FF49"));
+  rect(grid[0][0].x * sLen, grid[0][0].y * sLen, sLen, sLen);
+
+  fill(color("#FF4225"));
+  rect(grid[cols - 1][rows - 1].x * sLen, grid[cols - 1][rows - 1].y * sLen, sLen, sLen);
+
   if (mouseIsPressed) {
     console.log("Clicked");
     for (var i = 0; i < cols; i++) {
