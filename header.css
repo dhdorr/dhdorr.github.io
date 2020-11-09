@@ -12,6 +12,7 @@ header {
   position: sticky;
   top: 0px;
   background: #393e46;
+  background: linear-gradient(to right, #232526, #414345);
   color: white;
   transition: all 0.5s ease;
   box-shadow: none;
@@ -20,6 +21,8 @@ header {
 footer {
   position: relative;
   background: #232931;
+  background: linear-gradient(to right, #232526, #414345);
+
   color: white;
   height: 120px;
   display: flex;
@@ -47,6 +50,7 @@ p {
 .home {
   display: flex;
   background: #393e46;
+  background: linear-gradient(to right, #232526, #414345);
 }
 
 .spacer {
@@ -155,6 +159,7 @@ p {
 
 .projects {
   background: #232931;
+  background: linear-gradient(to right bottom, #141e30, #243b55);
 
   display: flex;
   flex-direction: column;
@@ -163,6 +168,7 @@ p {
 
 .about {
   background: #232931;
+  background: linear-gradient(to right, #232526, #414345);
 }
 
 .about__info {
