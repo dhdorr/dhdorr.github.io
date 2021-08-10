@@ -1,0 +1,199 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--font-family: 'Montserrat', sans-serif;
+      font-family: 'Open Sans', sans-serif;-->
+    <link rel="stylesheet" href="./header.css" />
+    <title>Derek Dorr</title>
+  </head>
+  <body>
+    <!--Navbar & Logo-->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#home" class="logo-text">
+            <h1>
+              <span style="color: #eea849;">{ </span>Derek Dorr<span
+                style="color: #eea849;"
+              >
+                }</span
+              >
+            </h1>
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a data-page="home" href="#home">Home</a>
+          </li>
+          <li>
+            <a data-page="projects" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a data-page="about" href="#about">About</a>
+          </li>
+          <div class="bubble"></div>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <!--Contents of each section-->
+    <main>
+      <section data-index="0" class="home" id="home">
+        <div class="spacer"></div>
+        <div class="col-test">
+          <h3 class="test-greeting">Welcome!</h3>
+          <h2 class="test-name">
+            <span style="color: white;">I'm</span> Derek Dorr
+          </h2>
+          <h3 class="test-description">A creator at heart</h3>
+          <div class="hor-spacer"></div>
+          <ul class="buttons">
+            <li>
+              <a href="DD_BestResume_2021.pdf" target="_blank" class="resume-btn">resume</a>
+            </li>
+            <div class="btn-spacer"></div>
+            <li>          
+              <ul class="main-contacts">
+                <li>
+                  <i class="fas fa-envelope"></i>
+                </li>
+                <p>dhdorr@gmail.com</p>
+              </ul>
+            </li>
+          </ul>
+            <ul class="social-btns-list">
+              <h2>Follow Me</h2>
+              <a href="https://github.com/dhdorr" target="_blank">
+                <li>
+                  <i class="fab fa-github"></i>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/derek-dorr-7a0930167/" target="_blank">
+                <li>
+                  <i class="fab fa-linkedin-in"></i>
+                </li>
+              </a>
+              <a href="https://dhdorr.itch.io/" target="_blank">
+                <li>
+                  <i class="fab fa-itch-io"></i>
+                </li>
+              </a>
+            </ul>
+
+        </div>
+        <div class="home__pic">
+          <img src="hackerman.svg"></img>
+        </div>
+      </section>
+
+      <section data-index="2" class="projects" id="projects">
+        
+        <div class="projects__info">
+          <h2>Projects</h2>
+          <ul class="p__horz-list">
+            <li>
+              <h5>Web</h5>
+            </li>
+            <li>
+              <h5>Games</h5>
+            </li>
+            <li>
+              <h5>Programming</h5>
+            </li>
+          </ul>
+        </div>
+        <div class="projects__display">
+          <a href="projects.html" target="_blank">
+          <div class="proj__card">
+            <h3>A* Path-finder</h3>
+            <img src="algo.png" alt="" class="proj__pic">
+          </div>
+          </a>
+          
+          <a href="portal_demo_2/index.html" target="_blank">
+            <div class="proj__card">
+              <h3>Godot-Man Demo</h3>
+              <img src="godot.png" alt="" class="proj__pic">
+            </div>
+          </a>
+
+          <a href="https://github.com/dhdorr?tab=repositories" target="_blank">
+            <div class="proj__card">
+              <h3>Github Repos</h3>
+              <img src="github.png" alt="" class="proj__pic">
+            </div>
+          </a>
+
+          <a href="https://dhdorr.itch.io/" target="_blank">
+            <div class="proj__card">
+              <h3>Itch.io Page</h3>
+              <img src="itch_img_2.png" alt="" class="proj__pic">
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section data-index="1" class="about" id="about">
+        <div class="about__info">
+          <ul>
+            <li>
+              <h2>About Me</h2>
+            </li>
+            <li>
+              <p>
+                I graduated from California State University, Fullerton with a B.S. in Computer Science. I am passionate about expressing my creativity through the things I make.
+                My career goals are to work in Web Development or Game Design because I love the idea of designing awesome, unforgettable user experiences!
+              </p>
+            </li>
+            <li>
+              <ul class="horz-list">
+                <li>
+                  <h5>Passionate</h5>
+                </li>
+                <li>
+                  <h5>Driven</h5>
+                </li>
+                <li>
+                  <h5>Creative</h5>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="about__pic">
+          <img src="portfolio_headshot.jpg"></img>
+        </div>
+      </section>
+
+    </main>
+    <!--Footer Info-->
+    <footer>
+      <p>Created by Derek Dorr</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/dbba000862.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./portfolio.js"></script>
+    
+  </body>
+</html>

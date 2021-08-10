@@ -1,199 +1,107 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <!--font-family: 'Montserrat', sans-serif;
-      font-family: 'Open Sans', sans-serif;-->
-    <link rel="stylesheet" href="./header.css" />
-    <title>Derek Dorr</title>
+    <script src="https://kit.fontawesome.com/dbba000862.js" crossorigin="anonymous"></script>
+    <title>Portfolio 2022</title>
   </head>
   <body>
-    <!--Navbar & Logo-->
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="#home" class="logo-text">
-            <h1>
-              <span style="color: #eea849;">{ </span>Derek Dorr<span
-                style="color: #eea849;"
-              >
-                }</span
-              >
-            </h1>
-          </a>
-        </div>
-
-        <ul class="nav-links">
-          <li>
-            <a data-page="home" href="#home">Home</a>
-          </li>
-          <li>
-            <a data-page="projects" href="#projects">Projects</a>
-          </li>
-          <li>
-            <a data-page="about" href="#about">About</a>
-          </li>
-          <div class="bubble"></div>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-    </header>
-    <!--Contents of each section-->
     <main>
-      <section data-index="0" class="home" id="home">
-        <div class="spacer"></div>
-        <div class="col-test">
-          <h3 class="test-greeting">Welcome!</h3>
-          <h2 class="test-name">
-            <span style="color: white;">I'm</span> Derek Dorr
-          </h2>
-          <h3 class="test-description">A creator at heart</h3>
-          <div class="hor-spacer"></div>
-          <ul class="buttons">
-            <li>
-              <a href="DD_BestResume_2021.pdf" target="_blank" class="resume-btn">resume</a>
-            </li>
-            <div class="btn-spacer"></div>
-            <li>          
-              <ul class="main-contacts">
-                <li>
-                  <i class="fas fa-envelope"></i>
-                </li>
-                <p>dhdorr@gmail.com</p>
-              </ul>
-            </li>
-          </ul>
-            <ul class="social-btns-list">
-              <h2>Follow Me</h2>
-              <a href="https://github.com/dhdorr" target="_blank">
-                <li>
-                  <i class="fab fa-github"></i>
-                </li>
-              </a>
-              <a href="https://www.linkedin.com/in/derek-dorr-7a0930167/" target="_blank">
-                <li>
-                  <i class="fab fa-linkedin-in"></i>
-                </li>
-              </a>
-              <a href="https://dhdorr.itch.io/" target="_blank">
-                <li>
-                  <i class="fab fa-itch-io"></i>
-                </li>
-              </a>
-            </ul>
-
-        </div>
-        <div class="home__pic">
-          <img src="hackerman.svg"></img>
-        </div>
-      </section>
-
-      <section data-index="2" class="projects" id="projects">
-        
-        <div class="projects__info">
-          <h2>Projects</h2>
-          <ul class="p__horz-list">
-            <li>
-              <h5>Web</h5>
-            </li>
-            <li>
-              <h5>Games</h5>
-            </li>
-            <li>
-              <h5>Programming</h5>
-            </li>
-          </ul>
-        </div>
-        <div class="projects__display">
-          <a href="projects.html" target="_blank">
-          <div class="proj__card">
-            <h3>A* Path-finder</h3>
-            <img src="algo.png" alt="" class="proj__pic">
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="./images/portfolio_headshot.jpg" alt="" class="user-image" />
+            <h3>Derek Dorr</h3>
+            <p>Software Engineer</p>
           </div>
-          </a>
-          
-          <a href="portal_demo_2/index.html" target="_blank">
-            <div class="proj__card">
-              <h3>Godot-Man Demo</h3>
-              <img src="godot.png" alt="" class="proj__pic">
+          <div class="links-list">
+            <div class="link clickable" id="home">
+              <i class="fas fa-home fa-lg"></i>
+              <h2>Home</h2>
             </div>
-          </a>
-
-          <a href="https://github.com/dhdorr?tab=repositories" target="_blank">
-            <div class="proj__card">
-              <h3>Github Repos</h3>
-              <img src="github.png" alt="" class="proj__pic">
-            </div>
-          </a>
-
-          <a href="https://dhdorr.itch.io/" target="_blank">
-            <div class="proj__card">
-              <h3>Itch.io Page</h3>
-              <img src="itch_img_2.png" alt="" class="proj__pic">
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section data-index="1" class="about" id="about">
-        <div class="about__info">
-          <ul>
-            <li>
+            <div class="link clickable" id="about">
+              <i class="fas fa-user-astronaut fa-lg"></i>
               <h2>About Me</h2>
-            </li>
-            <li>
-              <p>
-                I graduated from California State University, Fullerton with a B.S. in Computer Science. I am passionate about expressing my creativity through the things I make.
-                My career goals are to work in Web Development or Game Design because I love the idea of designing awesome, unforgettable user experiences!
-              </p>
-            </li>
-            <li>
-              <ul class="horz-list">
-                <li>
-                  <h5>Passionate</h5>
-                </li>
-                <li>
-                  <h5>Driven</h5>
-                </li>
-                <li>
-                  <h5>Creative</h5>
-                </li>
-              </ul>
-            </li>
-          </ul>
+            </div>
+            <div class="link clickable" id="projects">
+              <i class="fas fa-laptop-code fa-lg"></i>
+              <h2>My Projects</h2>
+            </div>
+            <div class="link clickable" id="resume">
+              <i class="fas fa-scroll fa-lg"></i>
+              <h2>My Resume</h2>
+            </div>
+          </div>
+          <div class="contact clickable" id="contact">
+            <h2>Contact Me!</h2>
+          </div>
         </div>
-        <div class="about__pic">
-          <img src="portfolio_headshot.jpg"></img>
+        <!-- END OF DASHBOARD NAV -->
+        <div class="content-view" id="contentView">
+          <div class="content-title">
+            <h1 class="my-title" id="title"></h1>
+          </div>
+          <div class="content-info" id="parent">
+            <!-- <div class="card-grid">
+              <div class="project-card">
+                <div class="card-info">
+                  <h2 class="card-title">A* Pathfinder</h2>
+                  <p class="card-body">Try out an interactive A* pathfinding algorithm!</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="card-info">
+                  <h2 class="card-title">Itch.io Games</h2>
+                  <p class="card-body">Check out and play some of my game jam submissions!</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="card-info">
+                  <h2 class="card-title">Github Repos</h2>
+                  <p class="card-body">See what I'm working on now, and browse my repositories!</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="card-info">
+                  <h2 class="card-title">Card 1</h2>
+                  <p class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, reiciendis.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <!-- <p class="about-me-content" id="about-me">
+              <span style="font-weight: 600; font-size: 34px">Hello! </span>My name is Derek Dorr
+              and I am an aspiring Software Developer. I graduated from California State University
+              Fullerton with a B.S. in Computer Science with an emphasis on Software Engineering. My
+              passion is building beautiful software and designing unique, unforgettable user
+              experiences that make each application, game, and web-site stand out.
+            </p>
+            <div class="about-interests">
+              <h3>My Interests</h3>
+              <div class="interest-list">
+                <h2 class="item">Apps</h2>
+                <h2 class="item">Games</h2>
+                <h2 class="item">Web</h2>
+              </div>
+            </div> -->
+            <div class="welcome-page">
+              <h1 style="font-weight: 500">Creative at heart</h1>
+              <h1 style="font-weight: 500">Driven to build great experiences</h1>
+            </div>
+          </div>
         </div>
       </section>
-
     </main>
-    <!--Footer Info-->
-    <footer>
-      <p>Created by Derek Dorr</p>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/dbba000862.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./portfolio.js"></script>
-    
   </body>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
+  <script src="script.js"></script>
 </html>
