@@ -1,6 +1,6 @@
 :root {
   --my-bg-gradient: linear-gradient(to right top, #91f1e0, #78e4f5);
-  --my-text-color: rgba(39, 71, 112, 0.8);
+  --my-text-color: rgb(72, 104, 146);
 }
 
 * {
@@ -9,8 +9,17 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
 main {
   min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
   background: var(--my-bg-gradient);
   background-image: url("./images/emerald.jpg");
   background-position: bottom;
@@ -197,6 +206,8 @@ h3 {
   animation-duration: 0.6s;
   animation-delay: 0.1s;
   animation-fill-mode: backwards;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .project-card {
@@ -299,7 +310,7 @@ h3 {
   opacity: 0;
   transform: scale(0.6);
   animation-name: fadein;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
@@ -338,9 +349,9 @@ h3 {
     opacity: 0;
     transform: scale(0.6);
   }
-  70% {
-    opacity: 0.7;
-    transform: scale(1.05);
+  80% {
+    opacity: 0.75;
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;

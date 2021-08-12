@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/dbba000862.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project-style.css" />
+    <title>Document</title>
+  </head>
+  <div class="line-deco a"></div>
+  <div class="line-deco b"></div>
+  <div class="line-deco c"></div>
+  <div class="line-deco d"></div>
+  <div class="line-deco e"></div>
+  <div class="line-deco f"></div>
+  <body>
+    <div class="info-btn">
+      <div class="info-bg"><i class="fas fa-info fa-lg"></i></div>
+
+      <div class="info-bar">This app is made with P5.js</div>
+    </div>
+    <div class="app-container">
+      <h1>A* Pathfinding</h1>
+    </div>
+    <main>
+      <div class="maze" id="maze"></div>
+      <div class="proj-btns">
+        <h3>Use left-click to draw a maze</h3>
+        <button class="start-btn btn" onclick="initAlgo()">START</button>
+        <button class="clear-btn btn" onclick="reloadPage()">CLEAR</button>
+      </div>
+      <!-- <ul class="instructions">
+        <li>
+          <h4>Draw your own maze on the grid!</h4>
+        </li>
+        <li>
+          <h4>Press 's' key to start</h4>
+        </li>
+        <li>
+          <h4>Press 'c' key to clear the board</h4>
+        </li>
+      </ul> -->
+    </main>
+  </body>
+  <script src="sketch.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+    integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>
