@@ -98,6 +98,7 @@ function handleDelete(element) {
 async function handleEnterGuess() {
     let tempBool = await validateGuess();
     // let tempBool = true;
+    word_builder = word_builder.toLowerCase();
     if (tempBool) {
         
         let tempObj = {};
@@ -146,7 +147,7 @@ async function handleEnterGuess() {
                 testMe[(current_word * 5) + j].firstElementChild.style.color = 'white';
             }
         }
-        alert(`the infput word is: ${word_builder} and the WOTD is ${wordOfTheDay}`);
+        alert(`the input word is: ${word_builder} and the WOTD is ${wordOfTheDay}`);
         if (word_builder === wordOfTheDay) {
             letters.forEach((element) => {
                 element.disabled = true;
