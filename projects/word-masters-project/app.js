@@ -147,7 +147,6 @@ async function handleEnterGuess() {
                 testMe[(current_word * 5) + j].firstElementChild.style.color = 'white';
             }
         }
-        alert(`the input word is: ${word_builder} and the WOTD is ${wordOfTheDay}`);
         if (word_builder === wordOfTheDay) {
             letters.forEach((element) => {
                 element.disabled = true;
