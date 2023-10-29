@@ -71,12 +71,13 @@ function isLetter(letter) {
 }
 
 function handleLetterInput(event) {
+    const myLetter = event.key.toLowerCase();
     if (current_letter === 0) {
                 
-        word_builder += event.key;
+        word_builder += myLetter;
         current_letter++;
     } else if (current_letter !== 5) {
-        word_builder += event.key;
+        word_builder += myLetter;
         let enabledInput = toggleDisabled(current_letter);
         enabledInput.focus();
         current_letter++;
