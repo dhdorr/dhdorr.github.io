@@ -179,6 +179,16 @@ async function testUrl() {
     setLoading(false);
 }
 
+async function testUrl2() {
+    setLoading(true);
+    const promise = await fetch("http://www.rsdb.org/api/json/all");
+    const processedResponse = await promise.json();
+    console.log(processedResponse[1]);
+    // wordOfTheDay = processedResponse["word"];
+    // console.log(wordOfTheDay);
+    setLoading(false);
+}
+
 letters.forEach(element => {
     element.addEventListener("keydown", function (event) {
         // Check if input is a valid letter.
@@ -206,3 +216,4 @@ let start_letter = toggleDisabled(current_letter);
 start_letter.focus();
 
 testUrl();
+testUrl2();
