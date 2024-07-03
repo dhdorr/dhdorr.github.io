@@ -374,6 +374,37 @@ a:visited {
 
 }
 
+/* MOBILE VIEW */
+@media (max-width: 1000px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 20px;
+    }
+    .project-grid-wrapper {
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid rgba(3, 20, 44, 1);
+        background-color: rgba(3, 20, 44, 1);
+        box-shadow: 3px 3px 9px rgb(53, 53, 53);
+        overflow-y: scroll; */
+    }
+    .banner-title h3 {
+        font-size: 24px;
+    }
+    
+    .banner-info p {
+        font-size: 18px;
+    }
+
+    /* NAV */
+    .nav-bar-container {
+        display: none;
+    }
+
+}
+
 /* Animations */
 /* .slide-right {
     position: relative;
