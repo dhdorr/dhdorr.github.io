@@ -7,7 +7,7 @@
 
     <script src="https://unpkg.com/htmx.org@2.0.0"></script>
 
-    <script src="/static/js/cache.js"></script>
+    <!-- <script src="/static/js/cache.js"></script> -->
     <link rel="stylesheet" href="/static/css/styles.css" />
 
     <!-- google fonts -->
@@ -40,37 +40,10 @@
         </div>
     </main>
     <div id="mobile-anchor" class="mobile-anchor">
-        <!-- <div id="mobile-nav-menu" class="mobile-nav-menu">
-            <div id="mobile-close" class="mobile-close" name="mobile-close" hx-get="/templates/mobile-nav-toggle" hx-target="#mobile-nav" hx-swap="innerHTML">X</div>
-            <ul>
-                <li><button name="home" hx-get="/templates/home" hx-target="#content" hx-swap="innerHTML">Home</button></li>
-                <li><button name="about" hx-get="/templates/about" hx-target="#content" hx-swap="innerHTML">About Me</button></li>
-                <li><button name="projects" hx-get="/templates/projects" hx-target="#content" hx-swap="innerHTML">Projects</button></li>
-                <li><button>Credits</button></li>
-            </ul>
-        </div> -->
         <div id="mobile-nav" class="mobile-nav" name="mobile" hx-get="/templates/mobile-nav-menu" hx-target="#mobile-anchor" hx-swap="innerHTML">
             <div id="mobile-toggle" class="mobile-toggle">X</div>
-            <!-- <div id="mobile-nav-menu" class="mobile-nav-menu">
-                <div id="mobile-close" class="mobile-close" name="mobile-close" hx-get="/templates/mobile-nav-toggle" hx-target="#mobile-nav" hx-swap="innerHTML">X</div>
-                <ul>
-                    <li><button name="home" hx-get="/templates/home" hx-target="#content" hx-swap="innerHTML">Home</button></li>
-                    <li><button name="about" hx-get="/templates/about" hx-target="#content" hx-swap="innerHTML">About Me</button></li>
-                    <li><button name="projects" hx-get="/templates/projects" hx-target="#content" hx-swap="innerHTML">Projects</button></li>
-                    <li><button>Credits</button></li>
-                </ul>
-            </div>  -->
         </div>
     </div>
-    
-    <!-- <div class="mobile-nav-menu">
-        <ul>
-            <li><button name="home" hx-get="/templates/home" hx-target="#content" hx-swap="innerHTML">Home</button></li>
-            <li><button name="about" hx-get="/templates/about" hx-target="#content" hx-swap="innerHTML">About Me</button></li>
-            <li><button name="projects" hx-get="/templates/projects" hx-target="#content" hx-swap="innerHTML">Projects</button></li>
-            <li><button>Credits</button></li>
-        </ul>
-    </div> -->
     
 </body>
 </html>
