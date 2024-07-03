@@ -446,6 +446,15 @@ a:visited {
             margin-bottom: 5vh;
         }
     }
+    .career-interests {
+        width: 90%;
+        h3 {
+            font-size: 24px;
+        }
+        li {
+            font-size: 18px;
+        }
+    }
 
     .projects-wrapper {
         display: flex;
