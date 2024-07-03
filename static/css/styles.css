@@ -336,7 +336,7 @@ a:visited {
     border-radius: 3rem;
     box-shadow: 2px 2px 2px black;
     top: 10vh;
-    right: 10vw;
+    right: 5vw;
     background-color: aliceblue;
     display: flex;
     justify-content: center;
@@ -382,7 +382,7 @@ a:visited {
     box-shadow: 2px 2px 2px black;
     top: 0px;
     right: 0px;
-    height: 40vh;
+    height: 50vh;
     width: 40vw;
     border-radius: 0rem 2rem 0rem 2rem;
     background-color: aliceblue;
@@ -511,7 +511,7 @@ a:visited {
         justify-content: center;
         align-items: center;
         grid-template-columns: 1fr;
-        width: 80vw;
+        width: 90vw;
         height: 80vh;
         box-shadow: 4px 4px 4px black;
     }
