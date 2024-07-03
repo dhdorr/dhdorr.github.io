@@ -347,8 +347,8 @@ a:visited {
     /* display: none; */
     position: absolute;
     box-shadow: 2px 2px 2px black;
-    top: 10vh;
-    right: 10vw;
+    /* top: 10vh;
+    right: 10vw; */
     height: 40vh;
     width: 40vw;
     border-radius: 0rem 2rem 0rem 2rem;
@@ -373,12 +373,23 @@ a:visited {
         height: 20%;
         margin-top: 2px;
         margin-bottom: 2px;
-        background-color: aqua;
+        /* background-color: aqua; */
         display: flex;
         justify-content: center;
         button {
             width: 100%;
             border: none;
+            background-color: aliceblue;
+            color: inherit;
+            font-family: "Bona Nova SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: rgb(212, 220, 228);
+            cursor: pointer;
+            color: aliceblue;
         }
     }
 }
