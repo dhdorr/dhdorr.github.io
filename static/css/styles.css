@@ -409,7 +409,7 @@ a:visited {
 
     /* CONTENT */
     .content {
-        width: 100%;
+        /* width: 100%; */
         grid-column: 1;
         overflow-y: hidden;
     }
