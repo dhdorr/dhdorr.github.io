@@ -407,7 +407,7 @@ a:visited {
 
 }
 
-@media (width >= 800px) {
+@media (width >= 800px) and (width <= 1200) {
     /* CONTENT */
     .content {
         width: 100%;
