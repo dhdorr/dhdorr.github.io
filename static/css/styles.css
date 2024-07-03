@@ -397,10 +397,20 @@ a:visited {
     .banner-info p {
         font-size: 18px;
     }
+    .portfolio-canvas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* grid-template-columns: repeat(5, 1fr); */
+        /* width: 70vw;
+        height: 80vh;
+        box-shadow: 4px 4px 4px black; */
+    }
 
     /* CONTENT */
     .content {
-        grid-column: 1 / 6;
+        width: 100%;
+        /* grid-column: 1 / 6; */
         overflow-y: hidden;
     }
 
