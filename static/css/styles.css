@@ -266,6 +266,22 @@ a:visited {
     cursor: pointer;
 }
 
+.github {
+    background-image: url("../assets/Octocat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.itch {
+    background-image: url("../assets/itchio-logo-textless-white.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.algo {
+    background-image: url("../assets/maze2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .card-banner {
     display: flex;
     flex-direction: column;
