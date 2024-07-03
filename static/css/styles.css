@@ -1,8 +1,3 @@
-@media (min-width: 1920) {
-    * {
-        transition: none !important;
-    }
-}
 
 .bona-nova-sc-regular {
     font-family: "Bona Nova SC", serif;
@@ -330,8 +325,15 @@ a:visited {
     }
 }
 
+@media (max-width: 1250px) {
+    .card-banner {
+        height: 125px;
+        transition: none;
+    }
+  }
+
 /* Animations */
-.slide-right {
+/* .slide-right {
     position: relative;
     animation-name: slide-from-right;
     animation-duration: 0.8s;
@@ -393,4 +395,4 @@ a:visited {
     to {
       opacity: 1;
     }
-  }
+  } */
