@@ -1,3 +1,9 @@
+@media (min-width: 1920) {
+    * {
+        transition: none;
+    }
+}
+
 .bona-nova-sc-regular {
     font-family: "Bona Nova SC", serif;
     font-weight: 400;
