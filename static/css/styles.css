@@ -451,8 +451,12 @@ a:visited {
         h3 {
             font-size: 32px;
         }
+        ul {
+            padding: 0;
+        }
         ul li {
             font-size: 18px;
+            padding: 0;
         }
     }
 
