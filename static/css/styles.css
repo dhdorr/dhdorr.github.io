@@ -375,6 +375,26 @@ a:visited {
 }
 
 /* MOBILE VIEW */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-banner {
+        height: 40%;
+        transition: none;
+    }
+
+    .banner-title {
+        height: 33%;
+    }
+    .banner-title h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
 @media (max-width: 1000px) {
     /* CONTENT */
     .content {
@@ -409,7 +429,7 @@ a:visited {
         margin: 20px;
     }
     .project-grid-wrapper {
-        width: 90%;
+        width: 80%;
         height: 100%;
         margin-bottom: 50px;
         border: 2px solid rgba(3, 20, 44, 1);
