@@ -370,6 +370,21 @@ a:visited {
         box-shadow: 3px 3px 9px rgb(53, 53, 53);
         overflow-y: scroll;
     }
+    .card-banner {
+        height: 50%;
+        transition: all 0.075s linear;
+        .banner-title {
+            height: 33%;
+        }
+        .banner-info p {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
     .banner-title h3 {
         font-size: 24px;
     }
@@ -408,9 +423,23 @@ a:visited {
 }
 
 @media (min-width: 1001px) and (max-width: 1500px) {
+    .nav-bar ul li button {
+        border: none;
+        height: 100%;
+        width: 90%;
+        margin: 0;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
+        color: rgba(3, 20, 44, 1);
+        font-family: "Bona Nova SC", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        cursor: pointer;
+    }
     .card-banner {
         height: 100%;
-        transition: none;
+        /* transition: none; */
     }
 
     .banner-title {
