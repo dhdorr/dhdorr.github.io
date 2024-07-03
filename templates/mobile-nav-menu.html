@@ -1,4 +1,5 @@
-<div class="mobile-nav-menu">
+<div id="mobile-nav-menu" class="mobile-nav-menu">
+    <div id="mobile-close" class="mobile-close" name="mobile-close" hx-get="/templates/mobile-nav-toggle" hx-target="#mobile-anchor" hx-swap="innerHTML">X</div>
     <ul>
         <li><button name="home" hx-get="/templates/home" hx-target="#content" hx-swap="innerHTML">Home</button></li>
         <li><button name="about" hx-get="/templates/about" hx-target="#content" hx-swap="innerHTML">About Me</button></li>
