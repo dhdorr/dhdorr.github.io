@@ -308,19 +308,21 @@ a:visited {
 .project-card:hover {
     transform: scale(1.03);
     transition: transform 0.1s linear;
-    .card-banner {
-        height: 125px;
-        transition: all 0.075s linear;
-        .banner-title {
-            height: 33%;
-        }
-        .banner-info p {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            margin-top: 10px;
+    @media (min-width: 1600px) {
+        .card-banner {
+            height: 125px;
+            transition: all 0.075s linear;
+            .banner-title {
+                height: 33%;
+            }
+            .banner-info p {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                margin-top: 10px;
+            }
         }
     }
 }
