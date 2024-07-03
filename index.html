@@ -39,7 +39,16 @@
             
         </div>
     </main>
-    <div id="mobile-nav" class="mobile-nav" name="mobile" hx-get="/templates/mobile-nav-menu" hx-target="#mobile-nav" hx-swap="innerHTML">X
+    <div id="mobile-nav" class="mobile-nav" name="mobile" hx-get="/templates/mobile-nav-menu" hx-target="#mobile-toggle" hx-swap="outerHTML">
+        <div id="mobile-toggle" class="mobile-toggle">X</div>
+        <!-- <div class="mobile-nav-menu">
+            <ul>
+                <li><button name="home" hx-get="/templates/home" hx-target="#content" hx-swap="innerHTML">Home</button></li>
+                <li><button name="about" hx-get="/templates/about" hx-target="#content" hx-swap="innerHTML">About Me</button></li>
+                <li><button name="projects" hx-get="/templates/projects" hx-target="#content" hx-swap="innerHTML">Projects</button></li>
+                <li><button>Credits</button></li>
+            </ul>
+        </div>  -->
     </div>
     <!-- <div class="mobile-nav-menu">
         <ul>
