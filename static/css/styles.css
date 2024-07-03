@@ -345,7 +345,7 @@ a:visited {
 
 .mobile-nav-menu {
     /* display: none; */
-    position: absolute;
+    position: inherit;
     box-shadow: 2px 2px 2px black;
     /* top: 10vh;
     right: 10vw; */
