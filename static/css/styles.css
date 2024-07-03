@@ -327,7 +327,7 @@ a:visited {
     }
 }
 
-@media (width >= 1500px) {
+@media (min-width: 1001px) {
     .card-banner {
         height: 100%;
         transition: none;
@@ -357,7 +357,7 @@ a:visited {
     }
 }
 
-@media (width > 1000px) {
+/* @media (width > 1000px) {
     .project-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -375,10 +375,10 @@ a:visited {
         display: flex;
     }
 
-}
+} */
 
 /* MOBILE VIEW */
-@media (width <= 1000) {
+@media (max-width: 1000px) {
     /* CONTENT */
     .content {
         width: 100%;
