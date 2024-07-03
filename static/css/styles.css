@@ -385,10 +385,10 @@ a:visited {
     .project-grid-wrapper {
         width: 100%;
         height: 100%;
-        /* border: 2px solid rgba(3, 20, 44, 1);
+        border: 2px solid rgba(3, 20, 44, 1);
         background-color: rgba(3, 20, 44, 1);
         box-shadow: 3px 3px 9px rgb(53, 53, 53);
-        overflow-y: scroll; */
+        overflow-y: scroll;
     }
     .banner-title h3 {
         font-size: 24px;
