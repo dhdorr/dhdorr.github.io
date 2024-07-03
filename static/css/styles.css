@@ -398,6 +398,12 @@ a:visited {
         font-size: 18px;
     }
 
+    /* CONTENT */
+    .content {
+        grid-column: 1 / 6;
+        overflow-y: hidden;
+    }
+
     /* NAV */
     .nav-bar-container {
         display: none;
