@@ -325,10 +325,28 @@ a:visited {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1600px) {
     .card-banner {
         height: 125px;
         transition: none;
+    }
+    
+    .banner-title {
+        height: 33%;
+    }
+    .banner-title h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .banner-info p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 16px;
     }
   }
 
