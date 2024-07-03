@@ -374,6 +374,13 @@ a:visited {
 
 }
 
+@media (max-width: 1200) {
+    /* NAV */
+    .nav-bar-container {
+        display: flex;
+    }
+}
+
 /* MOBILE VIEW */
 @media (width < 800px) {
     .project-grid {
@@ -391,6 +398,11 @@ a:visited {
     .banner-title h3 {
         font-size: 20px;
         text-align: center;
+    }
+
+    /* NAV */
+    .nav-bar-container {
+        display: none;
     }
 
 }
