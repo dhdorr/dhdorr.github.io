@@ -1,4 +1,7 @@
-# dhdorr.github.io
+# Portfolio_Remix
+Remaking my SPA portfolio project with HTMX
 
-### Welcome to my website-portfolio!
-The purpose of this site is to show off my skills and projects that I am particularly proud of.
+Design Idea:
+- Every HTMX swappable element will get its own GO package
+- Maybe a custom exported type / interface to represent the swappable divs to make it legible
+- practice "Accept Interfaces, Return Structs" design pattern

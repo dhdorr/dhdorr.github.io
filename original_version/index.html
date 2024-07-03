@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/dbba000862.js" crossorigin="anonymous"></script>
+    <title>Derek Dorr Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user slider" style="--index: 0">
+            <img src="./images/portfolio_headshot.jpg" alt="" class="user-image" />
+            <h3>Derek Dorr</h3>
+            <p>Computer Scientist</p>
+          </div>
+          <div class="links-list">
+            <div class="link clickable slider" id="home" style="--index: 1">
+              <i class="fas fa-home fa-lg"></i>
+              <h2>Home</h2>
+            </div>
+            <div class="link clickable slider" id="about" style="--index: 2">
+              <i class="fas fa-user-astronaut fa-lg"></i>
+              <h2>About Me</h2>
+            </div>
+            <div class="link clickable slider" id="projects" style="--index: 3">
+              <i class="fas fa-laptop-code fa-lg"></i>
+              <h2>My Projects</h2>
+            </div>
+            <div class="link clickable slider" id="resume" style="--index: 4">
+              <i class="fas fa-scroll fa-lg"></i>
+              <h2>My Resume</h2>
+            </div>
+          </div>
+          <div class="contact clickable slider" id="contact" style="--index: 5">
+            <h2>Contact Me!</h2>
+          </div>
+        </div>
+        <!-- END OF DASHBOARD NAV -->
+        <div class="content-view" id="contentView">
+          <div class="content-title">
+            <h1 class="my-title" id="title"></h1>
+          </div>
+          <div class="content-info" id="parent">
+            <div class="welcome-page">
+              <h1 class="topper" style="font-weight: 500">Creative at heart</h1>
+              <h1 class="botter" style="font-weight: 500">Driven to build great experiences</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bubble"></div>
+      <div class="bubble2"></div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
