@@ -375,7 +375,7 @@ a:visited {
 }
 
 /* MOBILE VIEW */
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     .project-grid {
         grid-template-columns: repeat(1, 1fr);
     }
