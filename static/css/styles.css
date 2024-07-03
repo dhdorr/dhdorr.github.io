@@ -327,56 +327,6 @@ a:visited {
     }
 }
 
-@media (min-width: 1001px) {
-    .card-banner {
-        height: 100%;
-        transition: none;
-    }
-
-    .banner-title {
-        height: 33%;
-    }
-    .banner-title h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .banner-info p {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        margin-top: 10px;
-        font-size: 16px;
-    }
-
-    .project-card:hover {
-        transform: scale(1.03);
-        transition: transform 0.1s linear;
-    }
-}
-
-/* @media (width > 1000px) {
-    .project-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 20px;
-    }
-    .banner-title h3 {
-        font-size: 24px;
-    }
-    
-    .banner-info p {
-        font-size: 18px;
-    }
-    .nav-bar-container {
-        display: flex;
-    }
-
-} */
-
 /* MOBILE VIEW */
 @media (max-width: 1000px) {
     /* CONTENT */
@@ -456,6 +406,64 @@ a:visited {
     }
 
 }
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+    .card-banner {
+        height: 100%;
+        transition: none;
+    }
+
+    .banner-title {
+        height: 33%;
+    }
+    .banner-title h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .banner-info p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .project-card:hover {
+        transform: scale(1.03);
+        transition: transform 0.1s linear;
+    }
+}
+
+/* @media (width > 1000px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 20px;
+    }
+    .banner-title h3 {
+        font-size: 24px;
+    }
+    
+    .banner-info p {
+        font-size: 18px;
+    }
+    .nav-bar-container {
+        display: flex;
+    }
+
+} */
+
+
 
 /* Animations */
 /* .slide-right {
