@@ -348,6 +348,11 @@ a:visited {
         margin-top: 10px;
         font-size: 16px;
     }
+
+    .project-card:hover {
+        transform: scale(1.03);
+        transition: transform 0.1s linear;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -370,7 +375,7 @@ a:visited {
         cursor: pointer;
     } */
 
-    .card-banner {
+    /* .card-banner {
         height: 100%;
         transition: none;
     }
@@ -391,7 +396,7 @@ a:visited {
         padding: 0;
         margin-top: 10px;
         font-size: 12px;
-    }
+    } */
 }
 
 /* Animations */
