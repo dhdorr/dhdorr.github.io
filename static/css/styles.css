@@ -447,11 +447,11 @@ a:visited {
         }
     }
     .career-interests {
-        width: 90%;
+        width: 100%;
         h3 {
-            font-size: 24px;
+            font-size: 32px;
         }
-        li {
+        ul li {
             font-size: 18px;
         }
     }
