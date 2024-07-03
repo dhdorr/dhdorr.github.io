@@ -1,6 +1,6 @@
 @media (min-width: 1920) {
     * {
-        transition: none;
+        transition: none !important;
     }
 }
 
