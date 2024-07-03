@@ -438,6 +438,15 @@ a:visited {
         overflow-y: hidden;
     }
 
+    /* ABOUT ME */
+    .about-content-wrapper {
+        width: 90%;
+        p {
+            font-size: 18px;
+            margin-bottom: 5vh;
+        }
+    }
+
     .projects-wrapper {
         display: flex;
         flex-direction: column;
