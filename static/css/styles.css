@@ -327,6 +327,12 @@ a:visited {
     }
 }
 
+@media (max-width: 600px) {
+    .card-banner {
+        height: 50px;
+    }
+}
+
 /* MOBILE VIEW */
 @media (max-width: 1000px) {
     /* CONTENT */
