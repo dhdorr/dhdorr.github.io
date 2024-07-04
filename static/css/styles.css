@@ -343,6 +343,7 @@ a:visited {
 }
 
 .mobile-anchor {
+    display: none;
     position: absolute;
     width: 10vw;
     max-width: 70px;
@@ -353,7 +354,7 @@ a:visited {
     top: 10vh;
     right: 5vw;
     background-color: aliceblue;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
@@ -560,6 +561,9 @@ a:visited {
     /* NAV */
     .nav-bar-container {
         display: none;
+    }
+    .mobile-anchor {
+        display: flex;
     }
 
 }
