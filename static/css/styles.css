@@ -280,6 +280,12 @@ a:visited {
 .algo {
     background-image: url("../assets/maze2.png");
 }
+.wordle {
+    background-image: url("../assets/wordle.png");
+}
+.godot {
+    background-image: url("../assets/godot.png");
+}
 
 .card-banner {
     display: flex;
