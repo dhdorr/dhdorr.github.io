@@ -633,6 +633,32 @@ a:visited {
         transform: scale(1.03);
         transition: transform 0.1s linear;
     }
+
+    /* ABOUT ME */
+    .about-wrapper {
+        justify-content: start;
+    }
+    .about-content-wrapper {
+        width: 90%;
+        p {
+            font-size: 18px;
+            margin-bottom: 5vh;
+            margin-top: 0;
+        }
+    }
+    .career-interests {
+        width: 100%;
+        h3 {
+            font-size: 32px;
+        }
+        ul {
+            padding: 0;
+        }
+        ul li {
+            font-size: 18px;
+            padding: 0;
+        }
+    }
 }
 
 /* Animations */
