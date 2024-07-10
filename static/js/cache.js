@@ -5,7 +5,7 @@ console.log("hello world");
 document.addEventListener('htmx:beforeRequest', function(evt) {
     var url = evt.detail.requestConfig.path;
     var id = evt.detail.requestConfig.headers["HX-Target"];
-    console.log(evt.detail.requestConfig.headers["HX-Target"]);
+    // console.log(evt.detail.requestConfig.headers["HX-Target"]);
     if (String(evt.detail.requestConfig.verb).toLowerCase() === "get") {
         if (cache[url]) {
             console.log(`URL: ${url} is already cached`);
