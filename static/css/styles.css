@@ -286,6 +286,9 @@ a:visited {
 .godot {
     background-image: url("../assets/godot.png");
 }
+.monkey {
+    background-image: url("../assets/monkey-emoji.png");
+}
 
 .card-banner {
     display: flex;
