@@ -130,6 +130,10 @@ section > h2::after{
 .game-image {
     background-color: blue;
     aspect-ratio: 3 / 2;
+    background-image: url("../second-version/static/assets/monkey-emoji.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* PROJECTS */
