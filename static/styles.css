@@ -117,6 +117,12 @@ section > h2::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    "t"
+    "m"
+    "l";
+    grid-template-rows: 1fr auto 1fr;
 }
 
 .project-text-left {
@@ -125,13 +131,30 @@ section > h2::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    "t"
+    "m"
+    "l";
+    grid-template-rows: 1fr auto 1fr;
 }
 
 .project-title {
     margin: 0;
+    grid-area: t;
+    align-self: end;
+}
+
+.inner-project-text {
+    grid-area: m;
+    background-color: navy;
 }
 
 .project-image {
     aspect-ratio: 3 / 2;
     background-color: blue;
+}
+
+.lower-project-text {
+    grid-area: l;
 }
