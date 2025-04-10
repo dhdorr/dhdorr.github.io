@@ -143,6 +143,7 @@ section > h2::after{
     margin: 0;
     grid-area: t;
     align-self: end;
+    margin-bottom: 1rem;
 }
 
 .inner-project-text {
