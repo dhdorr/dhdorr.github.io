@@ -108,10 +108,28 @@ section > h2::after{
 
 .game-jam-bg {
 	background-color: white;
-	height: 20vh;
+    color: black;
 	width: 94%;
 	position: relative;
 	left: 3%;
+}
+
+.game-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.game-card {
+    background-color: lightblue;
+    aspect-ratio: 1 / 1;
+}
+
+.game-image {
+    background-color: blue;
+    aspect-ratio: 3 / 2;
 }
 
 /* PROJECTS */
