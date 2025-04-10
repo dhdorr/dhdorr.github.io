@@ -1,7 +1,3 @@
-# Portfolio_Remix
-Remaking my SPA portfolio project with HTMX
+# Portfolio Redux 3
 
-Design Idea:
-- Every HTMX swappable element will get its own GO package
-- Maybe a custom exported type / interface to represent the swappable divs to make it legible
-- practice "Accept Interfaces, Return Structs" design pattern
+TODO: set new monkey script url: monkey-script-web-repl-2-d9c9epbzh8cjc9df.eastus2-01.azurewebsites.net
