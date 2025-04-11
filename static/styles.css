@@ -78,6 +78,10 @@ section > h2::after{
 .square-image {
     aspect-ratio: 1 / 1;
     background-color: blue;
+    background-image: url("/static/assets/goodphoto_cropped3.JPG");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .skill-list {
@@ -123,15 +127,31 @@ section > h2::after{
 }
 
 .game-card {
-    background-color: lightblue;
+    background-color: whitesmoke ;
     aspect-ratio: 1 / 1;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 9px black;
 }
 
 .game-image {
     background-color: blue;
     aspect-ratio: 3 / 2;
-    background-image: url("../second-version/static/assets/monkey-emoji.png");
-    background-position: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.ld57 {
+    background-image: url("/static/assets/ludum-dare-57.png");
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wild-jam {
+    background-image: url("/static/assets/wild-jam.png");
+    background-position: cover;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -198,7 +218,35 @@ section > h2::after{
 
 .project-image {
     aspect-ratio: 3 / 2;
-    background-color: blue;
+    background-color: blue;    
+}
+
+.monkey-script {
+    background-image: url("/static/assets/monkey-script-home.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thesis {
+    background-image: url("/static/assets/thesis-pic-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.astar {
+    background-image: url("/static/assets/astar-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.word-masters {
+    background-image: url("/static/assets/word-masters-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .lower-project-text {
