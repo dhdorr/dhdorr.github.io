@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
+    /* background-image: url("/static/assets/test-bg-2.png"); */
 }
 
 .main-content {
@@ -30,11 +31,29 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
     width: calc(1024px / 4);
     height: 100vh;
     left: calc((1024px / 2) + (100vw / 2));
     top: 0;
+}
+
+.table-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 2rem;
+}
+.table-contents ul {
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+}
+.table-contents ul li {
+    margin-bottom: 0.5rem;
+}
+.table-contents ul li a{
+    color: white;
 }
 
 .header-wrapper {
@@ -116,6 +135,8 @@ section > h2::after{
 	width: 94%;
 	position: relative;
 	left: 3%;
+    padding-bottom: 2rem;
+    clip-path: polygon(0% 100%,5% 95%, 10% 100%, 15% 95%, 20% 100%, 25% 95%, 30% 100%, 35% 95%, 40% 100%, 45% 95%, 50% 100%, 55% 95%, 60% 100%, 65% 95%, 70% 100%, 75% 95%, 80% 100%, 85% 95%, 90% 100%, 95% 95%, 100% 100%, 100% 0, 0 0);
 }
 
 .game-grid {
@@ -133,7 +154,11 @@ section > h2::after{
     border-style: solid;
     border-color: whitesmoke;
     border-radius: 1rem;
-    box-shadow: 3px 3px 9px black;
+    box-shadow: 3px 3px 12px black;
+}
+.game-card:hover {
+    transform: scale(1.025, 1.025);
+    /* box-shadow: 0px 0px 9px gold; */
 }
 
 .game-image {
@@ -177,8 +202,8 @@ section > h2::after{
 }
 
 .project-text-right {
-    margin-left: 2rem;
-    text-align: center;
+    margin-left: 1rem;
+    text-align: end;
     display: grid;
     grid-template-areas: 
     "t"
@@ -191,8 +216,8 @@ section > h2::after{
 }
 
 .project-text-left {
-    margin-right: 2rem;
-    text-align: center;
+    margin-right: 1rem;
+    text-align: start;
     display: grid;
     grid-template-areas: 
     "t"
@@ -210,10 +235,14 @@ section > h2::after{
     align-self: end;
     margin-bottom: 1rem;
 }
+.project-title a {
+    color: white;
+}
 
 .inner-project-text {
     grid-area: m;
     background-color: navy;
+    padding: 0 1rem 0 1rem;
 }
 
 .project-image {
@@ -236,14 +265,14 @@ section > h2::after{
 }
 
 .astar {
-    background-image: url("/static/assets/astar-1.png");
+    background-image: url("/static/assets/astar-2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .word-masters {
-    background-image: url("/static/assets/word-masters-2.png");
+    background-image: url("/static/assets/word-masters-3.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -251,4 +280,49 @@ section > h2::after{
 
 .lower-project-text {
     grid-area: l;
+}
+
+.project-links-list {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    padding: 0;
+    height: 1.5rem;
+}
+.project-links-list li {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    position: relative;
+}
+
+.project-links-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.project-links-list li a img {
+    height: 100%;
+}
+
+.pll-left {
+    justify-content: start;
+}
+
+.pll-right {
+    justify-content: end;
+}
+
+.project-skills-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+.project-skills-list li {
+    background-color: black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
