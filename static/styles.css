@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
+    background-color: #172c42;
     color: white;
     margin: 0;
     padding: 0;
@@ -18,7 +19,8 @@ body {
 
 .main-content {
     width: 40vw;
-    background-color: dimgray;
+    /* background-color: dimgray; */
+    background-color: #172c42;
     min-width: 1024px;
 }
 
@@ -62,7 +64,7 @@ nav {
 }
 
 .section-header {
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 
 section > h2 {
@@ -76,9 +78,10 @@ section > h2::after{
     display: block;
     position: relative;
     background-color: white;
-    width: 200px;
-    height: 1px;
+    width: 50%;
+    height: 3px;
     margin-left: 1rem;
+    border-radius: 1rem;
 }
 
 /* ABOUT */
@@ -90,8 +93,17 @@ section > h2::after{
     gap: 10vh 0;
 }
 
+.a-head::after {
+    background-color: cyan;
+}
+
 .about-text {
     margin-right: 2rem;
+}
+
+.about-text p {
+    padding: 0;
+    margin: 0;
 }
 
 .square-image {
@@ -117,13 +129,13 @@ section > h2::after{
 
 .game-jams-wrapper {
     grid-column: 1 / 3;
-
 }
 
 .game-jams-banner {
-    background-color: salmon;
-    clip-path: polygon(100% 0%, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0);
+    background-color: #fa5c5c;
+    /* clip-path: polygon(100% 0%, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0); */
     text-align: center;
+    border-radius: 1rem 1rem 0 0;
 }
 .game-jams-banner > h2 {
     margin: 0;
@@ -132,11 +144,12 @@ section > h2::after{
 .game-jam-bg {
 	background-color: white;
     color: black;
-	width: 94%;
+	/* width: 94%; */
 	position: relative;
-	left: 3%;
-    padding-bottom: 2rem;
-    clip-path: polygon(0% 100%,5% 95%, 10% 100%, 15% 95%, 20% 100%, 25% 95%, 30% 100%, 35% 95%, 40% 100%, 45% 95%, 50% 100%, 55% 95%, 60% 100%, 65% 95%, 70% 100%, 75% 95%, 80% 100%, 85% 95%, 90% 100%, 95% 95%, 100% 100%, 100% 0, 0 0);
+	/* left: 3%; */
+    padding-bottom: 1rem;
+    /* clip-path: polygon(0% 100%,5% 95%, 10% 100%, 15% 95%, 20% 100%, 25% 95%, 30% 100%, 35% 95%, 40% 100%, 45% 95%, 50% 100%, 55% 95%, 60% 100%, 65% 95%, 70% 100%, 75% 95%, 80% 100%, 85% 95%, 90% 100%, 95% 95%, 100% 100%, 100% 0, 0 0); */
+    border-radius: 0 0 1rem 1rem;
 }
 
 .game-grid {
@@ -187,6 +200,10 @@ section > h2::after{
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.p-head::after {
+    background-color: deeppink;
 }
 
 .project-1 {
