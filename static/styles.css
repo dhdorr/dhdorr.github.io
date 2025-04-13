@@ -78,7 +78,7 @@ nav {
 .table-contents {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     margin-left: 2rem;
 }
 .table-contents h3 {
@@ -87,6 +87,7 @@ nav {
     text-decoration-color: deeppink;
 }
 .table-contents ul {
+    margin-top: 0;
     margin-bottom: 1rem;
     padding: 0;
     list-style: none;
@@ -94,7 +95,7 @@ nav {
 }
 .table-contents ul li {
     margin-bottom: 1rem;
-    
+    text-align: center;
 }
 .table-contents ul li a{
     color: var(--main-text-color);
@@ -107,7 +108,7 @@ nav {
 .go-to-top-btn {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .go-to-top-btn a {
     color: var(--main-text-color);
