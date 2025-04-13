@@ -12,6 +12,9 @@ header h1 {
 
 header h2 {
     margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 48px;
+    color: cyan;
 }
 
 header h3 {
@@ -20,6 +23,13 @@ header h3 {
 
 header h4 {
     margin: 0;
+    font-size: 18px;
+}
+header p {
+    margin: 0;
+    margin-bottom: 0.33rem;
+    font-size: 18px;
+    width: 50%;
 }
 
 .outfit-test {
@@ -220,8 +230,17 @@ section > h2::after{
     color: var(--main-text-color);
 }
 
-.skill-list > li::before {
+/* .skill-list > li::before {
     content: "🕹️";
+} */
+.sl-g::before {
+    content: "🎮";
+}
+.sl-c::before {
+    content: "🤖";
+}
+.sl-d::before {
+    content: "☁️";
 }
 
 .game-jams-wrapper {
