@@ -73,7 +73,7 @@ body {
     min-height: 100vh;
 }
 
-nav {
+.toc {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -83,6 +83,38 @@ nav {
     height: 100vh;
     left: calc((1024px / 2) + (100vw / 2));
     top: 0;
+}
+
+.socials {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* background-color: darkslategray; */
+    /* width: calc(1024px / 4); */
+    height: 100vh;
+    /* left: calc((1024px / 2)); */
+    left: calc(50vw - (1024px / 2) - 5vw);
+    top: 0;
+}
+.socials ul {
+    padding: 0;
+    list-style: none;
+}
+.socials ul li {
+    aspect-ratio: 1 / 1;
+    width: 1vw;
+    margin-bottom: 1.5rem;
+}
+.socials ul li a{
+    color: white;
+}
+
+.socials-line {
+	height: 10vh;
+	width: 1px;
+	background-color: white;
+	align-self: center;
 }
 
 .table-contents {
