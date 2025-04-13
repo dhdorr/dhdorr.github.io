@@ -471,6 +471,12 @@ section > h2::after{
     color: var(--main-text-color);
     font-size: 18px;
 }
+.ipt-right {
+    margin-left: 3rem;
+}
+.ipt-left {
+    margin-right: 3rem;
+}
 
 .project-image {
     aspect-ratio: 3 / 2;
