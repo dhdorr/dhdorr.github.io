@@ -121,6 +121,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 4px;
+    box-shadow: 2px 2px 4px black;
 }
 .go-to-top-btn a:hover {
     color: cyan;
@@ -227,6 +228,8 @@ section > h2::after{
     grid-column: 1 / 3;
     width: 60%;
     justify-self: center;
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 12px black;
 }
 
 .game-jams-banner {
@@ -278,6 +281,15 @@ section > h2::after{
     background-color: blue;
     aspect-ratio: 3 / 2;
     border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.game-title {
+    display: flex;
+    justify-content: center;
+    color: #222222;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 1rem;
 }
 
 .ld57 {
@@ -459,6 +471,7 @@ section > h2::after{
     /* background-color: black; */
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: dodgerblue;
+    box-shadow: 3px 3px 0px deeppink;
 }
 
 /* CONTACT */
