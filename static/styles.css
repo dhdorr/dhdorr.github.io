@@ -228,6 +228,13 @@ section > h2::after{
     font-size: 18px;
     gap: 0.33rem;
     color: var(--main-text-color);
+    margin-top: 0;
+}
+
+.sl-header {
+    margin: 2rem 0 0.5rem 0;
+    font-size: 20px;
+    text-decoration: underline cyan;
 }
 
 /* .skill-list > li::before {
@@ -304,11 +311,28 @@ section > h2::after{
 
 .game-title {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     color: #222222;
     font-size: large;
     font-weight: bold;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0.5rem;
+    
+}
+.views {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #858585;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.views svg {
+    margin-right: 0.5rem;
 }
 
 .ld57 {
@@ -322,6 +346,13 @@ section > h2::after{
     background-image: url("/static/assets/wild-jam.png");
     /* background-position: cover; */
     background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.crazy-car {
+    background-image: url("/static/assets/crazy-convertible-cover.png");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -387,7 +418,6 @@ section > h2::after{
     margin: 0;
     grid-area: t;
     align-self: end;
-    /* margin-bottom: 1rem; */
     font-size: 24px;
     width: 100%;
 }
@@ -401,8 +431,6 @@ section > h2::after{
 
 .inner-project-text {
     grid-area: m;
-    /* background-color: navy; */
-    /* padding: 0 1rem 0 1rem; */
 }
 .inner-project-text p {
     color: var(--main-text-color);
@@ -413,12 +441,23 @@ section > h2::after{
     aspect-ratio: 3 / 2;
     background-color: blue;    
 }
+.project-image:hover {
+    transform: scale(1.025);
+}
 
 .monkey-script {
     background-image: url("/static/assets/monkey-script-home.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.poker {
+    background-image: url("/static/assets/tools.svg");
+    background-position: center;
+    background-size: 25%;
+    /* background-repeat: no-repeat; */
+    background-color: #434343;
 }
 
 .thesis {
@@ -499,6 +538,57 @@ section > h2::after{
     background-color: cyan;
 }
 
+.contact-wrapper {
+    min-height: fit-content !important; 
+    margin-bottom: 15vh;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: calc((1024px / 2) - 25%);
+    text-align: center;
+}
+
+.contact-content h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.contact-content p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.contact-link {
+    align-self: center;
+}
+
+.contact-btn {
+    background-color: rgba(255, 255, 255, 0);
+    outline-style: solid;
+    outline-color: cyan;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 6px black;
+}
+.contact-btn:hover {
+    outline-color: deeppink;
+    box-shadow: 4px 4px 8px black;
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
 svg:hover {
     fill: deeppink;
+}
+
+footer {
+    height: 5vh;
+    /* background-color: #222222; */
+    /* display: flex; */
+    text-align: center;
 }
