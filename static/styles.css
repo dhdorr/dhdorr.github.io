@@ -366,6 +366,9 @@ section > h2::after{
 .views svg {
     margin-right: 0.5rem;
 }
+.views svg:hover {
+    fill: #858585;
+}
 
 .ld57 {
     background-image: url("/static/assets/ludum-dare-57.png");
@@ -471,7 +474,8 @@ section > h2::after{
 
 .project-image {
     aspect-ratio: 3 / 2;
-    background-color: blue;    
+    background-color: blue;
+    box-shadow: 4px 4px 9px black;
 }
 .project-image:hover {
     transform: scale(1.025);
@@ -606,12 +610,20 @@ section > h2::after{
     border: none;
     border-radius: 0.5rem;
     box-shadow: 3px 3px 6px black;
+    font-size: 20px;
 }
 .contact-btn:hover {
     outline-color: deeppink;
     box-shadow: 4px 4px 8px black;
     transform: scale(1.025);
     cursor: pointer;
+}
+
+.p-email {
+    font-size: 20px !important;
+}
+.p-email span {
+    color: deeppink;
 }
 
 svg:hover {
@@ -623,4 +635,15 @@ footer {
     /* background-color: #222222; */
     /* display: flex; */
     text-align: center;
+}
+
+.resume-btn {
+    border-style: solid;
+	border-width: 2px;
+	border-color: deeppink;
+	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
+.resume-btn:hover {
+    border-color: cyan;
 }
