@@ -3,146 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Derek's Portfolio</title>
-
-    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
-
-    <script src="/static/js/cache.js"></script>
-    <link rel="stylesheet" href="/static/css/styles.css" />
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="static/styles.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="/static/fonts/Outfit-VariableFont_wght.ttf" rel="font">
+
+    <title>Derek Dorr's Portfolio</title>
 </head>
 <body>
-    <main class="portfolio-canvas-container">
-        <div class="portfolio-canvas square glass">
-            <div class="nav-bar-container square-nav glass-nav">
-                <nav class="nav-bar">
-                    <ul>
-                        <li><button name="home" hx-get="/templates/home" hx-target="#content" hx-swap="innerHTML">Home</button></li>
-                        <li><button name="about" hx-get="/templates/about" hx-target="#content" hx-swap="innerHTML">About Me</button></li>
-                        <li><button style="background-color: #629afd;" name="projects" hx-get="/templates/projects" hx-target="#content" hx-swap="innerHTML">Projects</button></li>
-                        <li><button>Credits</button></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content" id="content">
-                <div class="projects-wrapper">
-    <div class="projects">
-        <h1 class="content-h1 fade" style="margin-bottom:0;">Derek Dorr's</h1>
-        <h3 style="margin-top:0;">Software Engineering Projects</h3>
-        <div class="project-grid-wrapper square">
-            <div class="project-grid">
-                <a href="https://github.com/dhdorr" target="_blank">
-                    <div class="project-card square github pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>My Github</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>Come see what I am currently working on!</p>
-                            </div>
-                        </div>
-                    </div>
+    <nav class="toc">
+        <div class="table-contents">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="/static/assets/Software_Engineer_Resume_Derek_Dorr_2025.pdf" target="_blank" class="resume-btn" title="resume">Resume</a></li>
+            </ul>
+            <div class="go-to-top-btn">
+                <a href="#header" title="go to top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="90%" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                      </svg>
                 </a>
-                <a href="https://testmonkey-grhsethedbbdhufy.canadacentral-01.azurewebsites.net/" target="_blank">
-                    <div class="project-card square monkey pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>Monkey WebREPL</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>Check out this super cool WebREPL interface for my custom-made programming language</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/word-masters-project/index.html" target="_blank">
-                    <div class="project-card square wordle pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>Word Masters</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>Can you guess the word of the day?</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/a-star/astar.html" target="_blank">
-                    <div class="project-card square algo pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>A* Visualizer</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>Try out an interactive pathfinding algorithm visualizer!</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/dhdorr/Go_Pokedex" target="_blank">
-                    <div class="project-card square github pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>GO Pokedex CLI</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>Check out an interactive Pokedex CLI REPL project!</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://dhdorr.itch.io/crazy-dababy" target="_blank">
-                    <div class="project-card square itch pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>Crazy Dababy Game</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>YEAH YEAH!</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://dhdorr.itch.io/jet-pack-jumper" target="_blank">
-                    <div class="project-card square itch pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>Jet Pack Jumper</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>I miss Flappy Bird, so I made my own!</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/projects/portal_demo_2/index.html" target="_blank">
-                    <div class="project-card square godot pic">
-                        <div class="card-banner">
-                            <div class="banner-title">
-                                <h3>Pac-Portal Demo</h3>
-                            </div>
-                            <div class="banner-info">
-                                <p>Chomp pellets and portal your way to victory in this arcade remix!</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
             </div>
             
         </div>
-    </main>
-    <div id="mobile-anchor" class="mobile-anchor">
-        <div id="mobile-nav" class="mobile-nav" name="mobile" hx-get="/templates/mobile-nav-menu" hx-target="#mobile-anchor" hx-swap="innerHTML">
-            <div id="mobile-toggle" class="mobile-toggle">=</div>
+    </nav>
+
+    <nav class="socials">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/dhdorr/" target="_blank" rel="noopener noreferrer" title="linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/dhdorr" target="_blank" rel="noopener noreferrer" title="github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                 </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://bsky.app/profile/dhdorr.bsky.social" target="_blank" rel="noopener noreferrer" title="bluesky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg>
+                </a>
+            </li>
+            <li>
+                <a href="/static/assets/Software_Engineer_Resume_Derek_Dorr_2025.pdf" target="_blank" rel="noopener noreferrer" title="resume">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                    <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+                  </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="socials-line"></div>
+    </nav>
+
+    <div class="main-content-wrapper">
+        <div class="main-content">
+            <section id="header" class="header-wrapper">
+                <header>
+                    <h4><span style="color: deeppink;">What's up!?</span> My name is</h4>
+                    <h1>Derek Dorr</h1>
+                    <h2>Software Engineer</h2>
+                    <p>I'm a software engineer specializing in backend development and computer networking. I love expressing my creativty through code!</p>
+                </header>
+            </section>
+            
+            <section id="about" class="about-wrapper">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="header-line a-head"></div>
+                </div>
+                <div class="about-content-wrapper">
+                    <div class="about-text">
+                        <p>What’s up!? My name is Derek, and I love expressing my creativity and problem-solving skills through programming! Since I was a kid, games have been a driving force in my pursuit of education and personal development as a software engineer.</p>
+                        <br>
+                        <p> In 2024, I achieved my M.S. in Computer Science from California State University Fullerton, where I wrote my thesis on the impact of latency compensation techniques for multiplayer online games. I aim to become an expert in multiplayer game networking and I aspire to create incredible online gaming experiences!</p>
+                        <h3 class="sl-header">Here are some of my strongest skills:</h3>
+                        <ul class="skill-list">
+                            <li class="sl-g">Godot</li>
+                            <li class="sl-g">Unreal Engine</li>
+                            <li class="sl-c">C++</li>
+                            <li class="sl-c">Python</li>
+                            <li class="sl-c">Go</li>
+                            <li class="sl-c">JavaScript</li>
+                            <li class="sl-d">AWS</li>
+                            <li class="sl-d">Azure</li>
+                        </ul>
+                    </div>
+                    <div class="square-image"></div>
+
+                    <div class="game-jams-wrapper">
+                        <div class="game-jams-banner">
+                            <h2>Check Out My Game Jam Games On Itch.io!</h2>
+                        </div>
+                        <div class="game-jam-bg">
+                            <div class="game-grid">
+                                <div class="game-card">
+                                    <a href="https://dhdorr.itch.io/let-me-check-my-pockets" target="_blank" title="play on itch.io"><div class="game-image ld57"></div></a>
+                                    <div class="game-title">
+                                        Ludum Dare 57
+                                        <div class="views">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                                              </svg>
+                                            ~35
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-card">
+                                    <a href="https://dhdorr.itch.io/doodle-dude" target="_blank" title="play on itch.io"><div class="game-image wild-jam"></div></a>
+                                    <div class="game-title">
+                                        Godot Wild Jam
+                                        <div class="views">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                                              </svg>
+                                            ~180
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-card">
+                                    <a href="https://dhdorr.itch.io/crazy-dababy" target="_blank" title="play on itch.io"><div class="game-image crazy-car"></div></a>
+                                    <div class="game-title">
+                                        Crazy Convertible
+                                        <div class="views">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                                              </svg>
+                                            ~9,780
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="projects" class="projects-wrapper">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                    <div class="header-line p-head"></div>
+                </div>
+                
+                <ul class="projects-content-wrapper">
+                    <li class="project-1">
+                        <a class="project-image monkey-script" href="http://monkey-script-web-repl-2-d9c9epbzh8cjc9df.eastus2-01.azurewebsites.net" target="_blank" title="live demo"></a>
+                        <div class="project-text-right">
+                            <h2 class="project-title"><a href="http://monkey-script-web-repl-2-d9c9epbzh8cjc9df.eastus2-01.azurewebsites.net" target="_blank">MonkeyScript Web REPL</a></h2>
+                            <div class="inner-project-text ipt-right">
+                                <p>MonkeyScript is an interpreted programming language and the interpreter for it was written in Go. Using HTMX and the Go standard Library, I created a terminal emulator front-end which allows users to write and evaluate code</p>
+                            </div>
+                            <div class="lower-project-text">
+                                <ul class="project-skills-list pll-right">
+                                    <li>GO</li>
+                                    <li>JavaScript</li>
+                                    <li>HTMX</li>
+                                    <li>Azure</li>
+                                </ul>
+                                <ul class="project-links-list pll-right">
+                                    <li>
+                                        <a href="http://monkey-script-web-repl-2-d9c9epbzh8cjc9df.eastus2-01.azurewebsites.net" target="_blank" title="live demo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/dhdorr/Monkey-Script-WebREPL" target="_blank" title="github">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-2">
+                        <div class="project-text-left">
+                            <h2 class="project-title"><a href="https://github.com/dhdorr/Multiplayer_Thesis_Project" target="_blank" title="view project">Thesis Project</a></h2>
+                            <div class="inner-project-text ipt-left">
+                                <p>This is a multiplayer online game, developed alongside my thesis, which investigates the implementation of latency compensation techniques.</p>
+                            </div>
+                            <div class="lower-project-text">
+                                <ul class="project-skills-list pll-left">
+                                    <li>Godot</li>
+                                    <li>C++</li>
+                                    <li>Multiplayer</li>
+                                    <li>3D</li>
+                                </ul>
+                                <ul class="project-links-list pll-left">
+                                    <li>
+                                        <a href="https://github.com/dhdorr/Multiplayer_Thesis_Project" target="_blank" title="view project">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/dhdorr/Multiplayer_Thesis_Project" target="_blank" title="github">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="project-image thesis" href="https://github.com/dhdorr/Multiplayer_Thesis_Project" target="_blank" title="view project"></a>
+                    </li>
+                    <li class="project-1">
+                        <a class="project-image poker" href="https://github.com/dhdorr/Story-Point-Poker" title="in development">
+                        </a>
+                        <div class="project-text-right">
+                            <h2 class="project-title"><a href="" target="_blank" title="in development">Story Point Poker</a></h2>
+                            <div class="inner-project-text ipt-right">
+                                <p>This project is still in development. This is a sprint planning tool for AGILE scrum methodology. Teams can vote on the amount of story points a sprint item is worth.</p>
+                            </div>
+                            <div class="lower-project-text">
+                                <ul class="project-skills-list pll-right">
+                                    <li>GO</li>
+                                    <li>JavaScript</li>
+                                    <li>HTMX</li>
+                                    <li>Azure</li>
+                                </ul>
+                                <ul class="project-links-list pll-right">
+                                    <li>
+                                        <a href="https://github.com/dhdorr/Story-Point-Poker" target="_blank" title="in development">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/dhdorr/Story-Point-Poker" target="_blank" title="github">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-2">
+                        <div class="project-text-left">
+                            <h2 class="project-title"><a href="projects/a-star/astar.html" target="_blank" title="a-star">A-Star Pathfinding Visualizer</a></h2>
+                            <div class="inner-project-text ipt-left">
+                                <p>Draw your own maze and watch how the solver uses the A* (A-Star) pathfinding algorithm to navigate to the exit.</p>
+                            </div>
+                            <div class="lower-project-text">
+                                <ul class="project-skills-list pll-left">
+                                    <li>JavaScript</li>
+                                    <li>P5.js</li>
+                                    <li>Algorithms</li>
+                                </ul>
+                                <ul class="project-links-list pll-left">
+                                    <li>
+                                        <a href="projects/a-star/astar.html" target="_blank" title="live demo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/dhdorr" target="_blank" title="github">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="project-image astar" href="projects/a-star/astar.html" target="_blank" title="play live"></a>
+                    </li>
+                    <li class="project-1">
+                        <a class="project-image word-masters" href="projects/word-masters-project/index.html" target="_blank" title="play live"></a>
+                        <div class="project-text-right">
+                            <h2 class="project-title"><a href="projects/word-masters-project/index.html" target="_blank" title="play live">Daily Word Guessing Game</a></h2>
+                            <div class="inner-project-text ipt-right">
+                                <p>Challenge yourself to guess the word of the day in 6 tries or less! The word of the day is fetched from a public API and your guesses are validated by a public dictionary API.</p>
+                            </div>
+                            <div class="lower-project-text">
+                                <ul class="project-skills-list pll-right">
+                                    <li>JavaScript</li>
+                                    <li>API</li>
+                                </ul>
+                                <ul class="project-links-list pll-right">
+                                    <li>
+                                        <a href="projects/word-masters-project/index.html" target="_blank" title="live demo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/dhdorr/Frontend-Masters-Projects" target="_blank" title="github">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+    
+            <section id="contact" class="contact-wrapper">
+                <div class="section-header">
+                    <h2>Talk to Me</h2>
+                    <div class="header-line c-head"></div>
+                </div>
+                <div class="contact-content">
+                    <h3>Say What's Up!</h3>
+                    <p>I am currently looking for new opportunities to expand my skillset and further my career as a Software Engineer!</p>
+                    <p class="p-email">dhdorr<span>@</span>gmail.com</p>
+                    <a class="contact-link" href="mailto:dhdorr@gmail.com" title="say hello!"><button class="contact-btn">Contact Me</button></a>
+                </div>
+            </section>
+
+            <footer>made with ❤️ by Derek Dorr</footer>
         </div>
     </div>
 </body>
