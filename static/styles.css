@@ -712,7 +712,9 @@ footer {
         padding: 0;
         height: 6vh;
         z-index: 100;
-        box-shadow: 0 4px 8px black
+        box-shadow: 0 4px 8px black;
+        background-color: #08192f;
+        height: 8vh;
     }
     .main-content {
         min-width: 100px;
@@ -741,7 +743,7 @@ footer {
         height: fit-content;
     }
     .table-contents ul li a {
-        color: black;
+        color: white;
     }
     .go-to-top-btn {
         display: none;
@@ -878,6 +880,7 @@ footer {
 }
 
 @media (max-width: 900px) {
+    
     .game-grid {
         width: auto;
         height: auto;
@@ -907,5 +910,8 @@ footer {
 @media (max-width: 600px) {
     .socials {
         top: 80vh;
+    }
+    .table-contents ul {
+        font-size: 16px;
     }
 }
