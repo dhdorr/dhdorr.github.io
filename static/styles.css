@@ -654,3 +654,208 @@ footer {
 .resume-btn:hover {
     border-color: cyan;
 }
+
+
+/* Mobile view */
+@media (max-width: 1250px) {
+    .toc {
+        display: flex;
+        width: 100vw;
+        background-color: white;
+        flex-direction: unset;
+        justify-content: unset;
+        height: unset;
+        left: unset;
+    }
+    .main-content {
+        min-width: 100px;
+    }
+    .table-contents {
+        flex-direction: unset;
+        align-items: unset;
+        margin-left: unset;
+        width: inherit;
+        justify-content: center;
+    }
+    .table-contents h3 {
+        display: none;
+    }
+    .table-contents ul {
+        /* margin-top: 3rem; */
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: inherit;
+    }
+    .table-contents ul li a {
+        color: black;
+    }
+    .go-to-top-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    .toc {
+        display: flex;
+        width: 100%;
+        background-color: white;
+        flex-direction: unset;
+        justify-content: unset;
+        height: unset;
+        left: 0;
+        padding: 0;
+        height: 6vh;
+        z-index: 100;
+        box-shadow: 0 4px 8px black
+    }
+    .main-content {
+        min-width: 100px;
+    }
+    .table-contents {
+        flex-direction: unset;
+        align-items: unset;
+        margin-left: unset;
+        width: 100%;
+        justify-content: center;
+    }
+    .table-contents h3 {
+        display: none;
+    }
+    .table-contents ul {
+        /* margin-top: 3rem; */
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: auto;
+        align-items: center;
+        gap: 2rem;
+    }
+    .table-contents ul li {
+        margin-bottom: 0;
+        height: fit-content;
+    }
+    .table-contents ul li a {
+        color: black;
+    }
+    .go-to-top-btn {
+        display: none;
+    }
+    .socials {
+        position: absolute;
+        flex-direction: row;
+        top: 66vh;
+        height: fit-content;
+        left: unset;
+    }
+    .socials ul {
+        display: flex;
+        width: 42vw;
+        justify-content: space-between;
+        margin-left: 5rem;
+    }
+    .socials ul li {
+        height: 2rem;
+        width: fit-content;
+    }
+
+    .socials-line {
+        display: none;
+    }
+
+    .main-content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 51fr;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .main-content {
+        width: unset;
+    }
+
+    .contact-content {
+        width: 100%;
+        left: unset;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content-wrapper {
+        margin: 0 1rem 0 1rem;
+        padding: 0;
+    }
+
+    .main-content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: start;
+    }
+    .header-wrapper p {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .socials ul {
+        justify-content: space-evenly;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .about-content-wrapper {
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .skill-list {
+        width: 100%;
+        grid-template-columns: auto 1fr;
+        column-gap: 6rem;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+    .about-text {
+        margin-right: 0;
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+    .square-image {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .game-jams-wrapper {
+        grid-row: 3;
+        grid-column: 1 / 4;
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .project-1 {
+        grid-template-columns: 1fr;
+    }
+    .project-text-right {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .ipt-right {
+        margin-left: 0;
+    }
+
+    .project-2 {
+        grid-template-columns: 1fr;
+    }
+    .project-text-left {
+        margin-top: 1rem;
+        margin-right: 0;
+        grid-row: 2;
+    }
+    .ipt-left {
+        margin-right: 0;
+    }
+
+}
