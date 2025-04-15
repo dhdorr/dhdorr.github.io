@@ -133,7 +133,7 @@ body {
     margin-bottom: 1rem;
     padding: 0;
     list-style: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 .table-contents ul li {
     margin-bottom: 1rem;
@@ -693,6 +693,10 @@ footer {
     .go-to-top-btn {
         display: none;
     }
+
+    .game-jams-wrapper {
+        width: 80%;
+    }
 }
 
 @media (max-width: 1550px) {
@@ -781,7 +785,7 @@ footer {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .main-content-wrapper {
         margin: 0 1rem 0 1rem;
         padding: 0;
@@ -794,7 +798,7 @@ footer {
         text-align: start;
     }
     .header-wrapper p {
-        width: 100%;
+        width: 80%;
         margin-bottom: 4rem;
     }
     .socials ul {
@@ -858,4 +862,50 @@ footer {
         margin-right: 0;
     }
 
+    /* .game-grid {
+        width: auto;
+        height: auto;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        position: unset;
+    }
+
+    .game-card {
+        height: 20vh;
+        position: relative;
+        scroll-snap-align: center;
+    } */
+}
+
+@media (max-width: 900px) {
+    .game-grid {
+        width: auto;
+        height: auto;
+        overflow-x: scroll;
+        position: unset;
+        scroll-snap-type: x mandatory;
+    }
+    .game-card {
+        aspect-ratio: 1 / 1;
+        position: relative;
+        height: 20vh;
+        scroll-snap-align: center;
+    }
+    .header-wrapper p {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-wrapper p {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .socials {
+        top: 80vh;
+    }
 }
